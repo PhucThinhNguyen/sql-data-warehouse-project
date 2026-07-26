@@ -20,7 +20,7 @@ CREATE TABLE bronze.crm_cust_info
     cst_lastname NVARCHAR(50) ,
     cst_matrital_status NVARCHAR(50),
     cst_gndr NVARCHAR(50),
-    cst_created_date DATE
+    cst_create_date DATE
 );
 
 GO 
@@ -65,7 +65,7 @@ CREATE TABLE bronze.erp_cust_az12
 (
     cid NVARCHAR(50),
     bdate DATE,
-    gen NVARCHAR(50),
+    gen NVARCHAR(50)
 )
 
 GO

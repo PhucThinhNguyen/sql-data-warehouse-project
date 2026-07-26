@@ -53,8 +53,8 @@ BEGIN
         );
         SET @end_time = GETDATE();
         PRINT '>> Load Duration: ' + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-        PRINT '';
         PRINT '>> -------------';
+        PRINT '';
 
 
         SET @start_time = GETDATE();
@@ -71,8 +71,8 @@ BEGIN
         );
         SET @end_time = GETDATE();
         PRINT '>> Load Duration: ' + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-        PRINT '';
         PRINT '>> -------------';
+        PRINT '';
 
 
         SET @start_time = GETDATE();
@@ -89,14 +89,13 @@ BEGIN
         );
         SET @end_time = GETDATE();
         PRINT '>> Load Duration: ' + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-        PRINT '';
         PRINT '>> -------------';
-
+        PRINT '';
 
         --------------------------------------------------------------------------
         --                                  ERP
         --------------------------------------------------------------------------
-        PRINT '';
+
         PRINT '-------------------------------------';
         PRINT 'Loading ERP Tables';
         PRINT '-------------------------------------';
@@ -115,8 +114,8 @@ BEGIN
         );
         SET @end_time = GETDATE();
         PRINT '>> Load Duration: ' + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-        PRINT '';
         PRINT '>> -------------';
+        PRINT '';
 
 
         SET @start_time = GETDATE();
@@ -133,8 +132,8 @@ BEGIN
         );
         SET @end_time = GETDATE();
         PRINT '>> Load Duration: ' + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-        PRINT '';
         PRINT '>> -------------';
+        PRINT '';
 
 
         SET @start_time = GETDATE();
@@ -151,11 +150,10 @@ BEGIN
         );
         SET @end_time = GETDATE();
         PRINT '>> Load Duration: ' + CAST(DATEDIFF(SECOND, @start_time, @end_time) AS NVARCHAR) + ' seconds';
-        PRINT '';
         PRINT '>> -------------';
+        PRINT '';
 
     SET @batch_end_time = GETDATE();
-    PRINT '';
     PRINT '-------------------------------------------';
     PRINT 'ETL Duration: ' + CAST(DATEDIFF(SECOND, @batch_start_time, @batch_end_time) AS NVARCHAR) + ' seconds';
     PRINT '-------------------------------------------';
