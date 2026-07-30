@@ -203,7 +203,7 @@ BEGIN
             REPLACE(cid, '-', '') cid,
             CASE WHEN TRIM(REPLACE(cntry, CHAR(13), '')) = 'DE' THEN 'Germany'
                 WHEN TRIM(REPLACE(cntry, CHAR(13), '')) IN ('US', 'USA') THEN 'United States'
-                WHEN TRIM(REPLACE(cntry, CHAR(13), '')) = '' OR TRIM(REPLACE(cntry, CHAR(13), '')) IS NULL THEN 'n\a'
+                WHEN TRIM(REPLACE(cntry, CHAR(13), '')) = '' OR TRIM(REPLACE(cntry, CHAR(13), '')) IS NULL THEN 'n/a'
                 ELSE TRIM(REPLACE(cntry, CHAR(13), ''))
             END cntry   -- Normalize and Handle missing or blank country codes
         FROM bronze.erp_loc_a101
